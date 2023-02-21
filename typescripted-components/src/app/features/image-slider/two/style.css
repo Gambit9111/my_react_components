@@ -1,0 +1,27 @@
+
+.features-image-slider-two
+{
+    cursor: grab;
+    overflow: hidden;
+}
+
+.features-image-slider-two .inner-carousel
+{
+    display: flex;
+}
+
+.features-image-slider-two .inner-carousel .item {
+    min-height: 40rem;
+    min-width: 30rem;
+    padding: 40px;
+}
+
+.features-image-slider-two .inner-carousel .item .myImage
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    pointer-events: none;
+}
+
+
