@@ -46,6 +46,7 @@ export default function Component({}: Props) {
           {images_array.map((image) => {
             return (
               <Image
+                key={image.id}
                 priority
                 className="myImage"
                 id={`slide-${image.id}`}
@@ -54,69 +55,18 @@ export default function Component({}: Props) {
               />
             );
           })}
-
-          {/* <Image
-            priority
-            className="myImage"
-            id="slide-1"
-            src={img1}
-            alt="img1"
-          />
-          <Image
-            priority
-            className="myImage"
-            id="slide-2"
-            src={img2}
-            alt="img2"
-          />
-          <Image
-            priority
-            className="myImage"
-            id="slide-3"
-            src={img3}
-            alt="img3"
-          /> */}
         </div>
         <div className="slider-nav">
           {images_array.map((image) => {
             return (
               <a
+                key={image.id}
                 onClick={() => toggleClass(image.id)}
                 href={`#slide-${image.id}`}
                 className={showSlide === image.id ? "active" : ""}
               />
             );
           })}
-
-          {/* //   {showSlide === 1 ? (
-        //     <a
-        //       onClick={() => toggleClass(1)}
-        //       href="#slide-1"
-        //       className="active"
-        //     />
-        //   ) : (
-        //     <a onClick={() => toggleClass(1)} href="#slide-1" />
-        //   )}
-
-        //   {showSlide === 2 ? (
-        //     <a
-        //       onClick={() => toggleClass(2)}
-        //       href="#slide-2"
-        //       className="active"
-        //     />
-        //   ) : (
-        //     <a onClick={() => toggleClass(2)} href="#slide-2" />
-        //   )}
-
-        //   {showSlide === 3 ? (
-        //     <a
-        //       onClick={() => toggleClass(3)}
-        //       href="#slide-3"
-        //       className="active"
-        //     />
-        //   ) : (
-        //     <a onClick={() => toggleClass(3)} href="#slide-1" />
-        //   )} */}
         </div>
       </div>
     </section>

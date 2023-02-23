@@ -5,7 +5,7 @@ type Props = {};
 
 export default function page({}: Props) {
   return (
-    <main className="">
+    <main className="h-screen w-full pt-10">
       <Component />
     </main>
   );

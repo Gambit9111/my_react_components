@@ -1,6 +1,6 @@
 .features-image-slider-one .slider {
     display: flex;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
